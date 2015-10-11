@@ -58,11 +58,11 @@ class Bank {
 		Exception ex = new Exception();
 		throw ex;
 	}
-  public void cancelA() {
+  	public void cancelA() {
 		System.out.println("A 계좌 거래 취소  ");
 		balance += 100;
 	}
-	public void cancelB() {
+  	public void cancelB() {
 		System.out.println("B 계좌 거래 취소  ");
 		balance += 200;
 	}
