@@ -18,14 +18,14 @@ class Bank {
 	private int balance = 1000;
 	public void oneqTrade() {
 		try{
-				tradeWithA();
-				tradeWithB();
-				tradeWithC();
-		}	catch(Exception e) {
-        System.out.println("거래중 에러 발생, 전체 취소");
-        cancelA();
-        cancelB();
-        cancelC();
+			tradeWithA();
+			tradeWithB();
+			tradeWithC();
+		} catch(Exception e) {
+        		System.out.println("거래중 에러 발생, 전체 취소");
+			cancelA();
+        		cancelB();
+        		cancelC();
 		}
 		System.out.println("잔여 금액 : " + balance); // 에러 발생시 잔여금액은 처음 금액과 같게 하고 싶다.
 	}
@@ -53,10 +53,10 @@ class Bank {
 	}
 	public void tradeWithC() throws Exception {
 		int m = 300;
-			System.out.println("C 계좌에서 출금 - " + m);
-			balance -= m;
-			Exception ex = new Exception();
-			throw ex;
+		System.out.println("C 계좌에서 출금 - " + m);
+		balance -= m;
+		Exception ex = new Exception();
+		throw ex;
 	}
   public void cancelA() {
 		System.out.println("A 계좌 거래 취소  ");
