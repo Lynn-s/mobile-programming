@@ -18,31 +18,31 @@ public class AddLineNumber
 {
    public static void main(String[] args)
    {
-	   String path = AddLineNumber.class.getResource("").getPath();
+      String path = AddLineNumber.class.getResource("").getPath();
 	   
       try
       {
          
-    	   BufferedReader inputStream = 
+    	BufferedReader inputStream = 
                new BufferedReader(new FileReader(path+"original.txt"));
-         PrintWriter outputStream = 
+        PrintWriter outputStream = 
                new PrintWriter(new FileOutputStream(path+"numbered.txt"));
-         int lineNum = 1;
+        int lineNum = 1;
 
-         String line;
+        String line;
          
-         while ((line = inputStream.readLine()) != null) {
+        while ((line = inputStream.readLine()) != null) {
              outputStream.println(lineNum + " " + line);
              lineNum++;
          
-         		}
+        }
          
-      inputStream.close( );
-      outputStream.close( );
+        inputStream.close( );
+        outputStream.close( );
     
-    } catch (IOException e) {
-			e.printStackTrace();
-		} 
+      } catch (IOException e) {
+	e.printStackTrace();
+      } 
 
    }
 }
