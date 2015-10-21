@@ -1,4 +1,5 @@
 package practice;
+
 public class Pet {
 	private String name;
 	private int age; // in year
@@ -39,9 +40,9 @@ public class Pet {
 	}
 	public void set(String newName, int newAge, double newWeight) {
 		 // 구현 하시오.
-	 name = newName;
-	 age = newAge;
-	 weight = newWeight;
+	 	name = newName;
+		age = newAge;
+	 	weight = newWeight;
 	}
 	
 	public void setAge( int newAge) {
